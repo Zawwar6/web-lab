@@ -22,7 +22,10 @@
       </ul>
 
       <div class="icons">
-        <i class="cart">🛒</i>
+        <i class="cart">
+  🛒 <span id="cartCount">0</span>
+</i>
+
         <i class="menu-btn" onclick="toggleMenu()">☰</i>
       </div>
     </nav>
@@ -88,6 +91,7 @@
     </div>
   </section>
 
+<div id="toaster">Product added successfully!</div>
 
 
 <!--Product section-->
@@ -112,7 +116,8 @@
               <span class="off">15% OFF</span>
             </p>
             <p class="save">You save: Rs.7,000</p>
-            <button class="btn-add">Add To Cart</button>
+           <button class="btn-add" onclick="showToaster()">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -219,6 +224,80 @@
     <div class="swiper-pagination"></div>
   </div>
 </section>
+
+
+<section class="product-scroll">
+  <div class="item">
+    <img src="assesst/13.jpg" alt="Smart Watch">
+    <p>SMART WATCH</p>
+  </div>
+
+  <div class="item">
+    <img src="assesst/18.jpg" alt="Headphone">
+    <p>HEADPHONE</p>
+  </div>
+
+  <div class="item">
+    <img src="assesst/14.jpg" alt="Powerbank">
+    <p>POWERBANK</p>
+  </div>
+
+  <div class="item">
+    <img src="assesst/17.jpg" alt="Speakers">
+    <p>SPEAKERS</p>
+  </div>
+
+  <div class="item">
+    <img src="assesst/16.jpg" alt="Earbuds">
+    <p>EARBUDS</p>
+  </div>
+
+  <div class="item">
+    <img src="assesst/15.jpg" alt="Soundbar">
+    <p>SOUNDBAR</p>
+  </div>
+</section>
+
+<section class="single-banner">
+    <img src="assesst/19.webp" alt="Banner Image">
+</section>
+
+
+<section class="video-scroll">
+  <div class="v-item">
+    <video src="assesst/20.mp4" autoplay loop muted controls></video>
+
+  </div>
+
+  <div class="v-item">
+    <video src="assesst/21.mp4" autoplay loop muted controls></video>
+   
+  </div>
+
+  <div class="v-item">
+    <video src="assesst/22.mp4" autoplay loop muted controls></video>
+ 
+  </div>
+
+  <div class="v-item">
+    <video src="assesst/23.mp4" autoplay loop muted controls></video>
+    
+  </div>
+</section>
+
+<div class="cart-popup" id="cartPopup">
+  <h3>Your Cart</h3>
+  <div id="cartItems"></div>
+  
+  <!-- Buttons -->
+  <button class="close-cart" onclick="closeCart()">Close</button>
+  <button class="view-cart" onclick="viewCart()">View Cart</button>
+</div>
+
+
+<footer class="basic-footer">
+  <p>© 2025 Your Company Name. All Rights Reserved.</p>
+</footer>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
